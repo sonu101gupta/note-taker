@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Bot Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>📹 Meeting Bot Dashboard</h1>
+        <p class="subtitle">Record, transcribe, and summarize your Google Meet sessions</p>
+      </header>
+
+      <!-- Submit New Meeting Section -->
+      <section class="card submit-section">
+        <h2>🚀 Start New Meeting Recording</h2>
+        <form id="meeting-form">
+          <div class="form-group">
+            <input 
+              type="text" 
+              id="url" 
+              placeholder="Paste your Google Meet link here (e.g., https://meet.google.com/abc-defg-hij)" 
+              required
+            />
+            <button type="submit" class="btn-primary">Start Bot</button>
+          </div>
+        </form>
+        <div id="status" class="status-message"></div>
+      </section>
+
+      <!-- Active/Live Transcript Section -->
+      <section class="card live-section">
+        <div class="section-header">
+          <h2>🔴 Live Transcript</h2>
+          <div class="live-controls">
+            <select id="active-meeting-select">
+              <option value="">Select an active meeting...</option>
+            </select>
+            <button id="refresh-live" class="btn-secondary">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="live-transcript" class="transcript-container">
+          <p class="placeholder">No active meeting selected. Select a meeting from the dropdown above.</p>
+        </div>
+      </section>
+
+      <!-- Past Meetings List Section -->
+      <section class="card meetings-section">
+        <div class="section-header">
+          <h2>📚 Past Meetings</h2>
+          <button id="refresh-meetings" class="btn-secondary">🔄 Refresh</button>
+        </div>
+        <div id="meetings-list" class="meetings-list">
+          <p class="placeholder">Loading meetings...</p>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>

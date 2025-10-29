@@ -1,0 +1,12 @@
+
+> meetingbotpoc@0.1.0 gen:auth
+> node scripts/generate-auth.js
+
+Launching Chromium (headed) …
+Navigating to Google sign-in …
+generate-auth failed: page.waitForSelector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('input[type="password"]') to be visible
+    7 × locator resolved to hidden <input class="Hvu6D" tabindex="-1" type="password" jsname="RHeR4d" aria-hidden="true" spellcheck="false" name="hiddenPassword"/>
+
+    at /Users/sonugupta/Downloads/google-meet-meeting-bot-main/scripts/generate-auth.js:35:14
