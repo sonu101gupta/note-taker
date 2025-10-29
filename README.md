@@ -1,8 +1,22 @@
 # Google Meet Meeting Bot
 
-This is a PoC that joins a Google Meet, scrapes live captions, sends captions to OpenAI for summarization, and stores the transcript and summary in PostgreSQL. I've added a small frontend to allow users to submit meeting links.
+This is a PoC that joins a Google Meet, scrapes live captions, sends captions to OpenAI for summarization, and stores the transcript and summary in PostgreSQL. 
+
+**✨ Enhanced with a modern dashboard featuring:**
+- 🔴 **Live Transcript Viewer** - Real-time transcript updates
+- 📚 **Past Meetings List** - AI summaries with timestamps
+- 🚀 **Late Joiner Support** - View ongoing transcripts anytime
+- 🎨 **Professional UI** - Modern, responsive design
 
 If you're interested in the process, reasoning, demos, and more, [check out the blog](https://www.recall.ai/blog/how-we-built-an-in-house-google-meet-bot).
+
+## 📖 Quick Start
+
+**For a complete, detailed setup guide on a fresh machine, see:**
+👉 **[FRESH_SETUP_GUIDE.md](./FRESH_SETUP_GUIDE.md)**
+
+**For setup completion status and test results, see:**
+👉 **[SETUP_COMPLETE.md](./SETUP_COMPLETE.md)**
 
 ## Hosted Google Meet Bot
 If you don't want to host a bot yourself, check out [Recall.ai](https://www.recall.ai/?utm_source=github&utm_medium=sampleapp&utm_campaign=google-meet-bot-from-scratch)
